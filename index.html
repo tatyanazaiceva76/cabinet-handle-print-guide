@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable cabinet handle template: check the print scale</title>
+<meta name="description" content="Print a cabinet handle template at 1:1, check both 50 mm calibration bars, and distinguish hole pitch from handle length before marking.">
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<link rel="canonical" href="https://tatyanazaiceva76.github.io/cabinet-handle-print-guide/">
+<style>
+:root{color-scheme:light;--paper:#faf8f4;--ink:#172d26;--muted:#52665c;--line:#cbd5cd;--accent:#155b44;--wash:#eaf0e9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.05rem/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(100% - 2.5rem,48rem);margin-inline:auto}
+.skip{position:absolute;top:-10rem;left:1rem;padding:.6rem;background:white;z-index:2}.skip:focus{top:1rem}
+header{padding:3rem 0 1rem;border-bottom:1px solid var(--line)}
+.eyebrow{margin:0 0 .8rem;color:var(--muted);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+h1{max-width:22ch;font:600 clamp(2rem,6vw,3.35rem)/1.14 Georgia,"Times New Roman",serif;letter-spacing:-.025em;margin:0 0 1.4rem}
+nav{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;margin:1rem 0;font-size:.92rem}
+a{color:var(--accent);text-decoration-thickness:.08em;text-underline-offset:.18em}a:hover{text-decoration-thickness:.14em}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+article{padding:1.4rem 0 2rem}article>p:first-child{font-size:1.15rem}
+h2{margin:2.2rem 0 .7rem;font-size:1.38rem;line-height:1.35;scroll-margin-top:1rem}p{margin:.8rem 0 1.2rem}
+ol,ul{padding-left:1.5rem}li{padding-left:.2rem;margin:.65rem 0}
+figure{margin:1.4rem 0 1.8rem;border:1px solid var(--line);background:white;padding:1rem}figure svg{display:block;width:100%;height:auto}figcaption{font-size:.85rem;color:var(--muted);line-height:1.5;margin-top:.7rem}
+table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.95rem}caption{text-align:left;color:var(--muted);font-size:.85rem;padding-bottom:.5rem}th,td{text-align:left;border-bottom:1px solid var(--line);padding:.65rem .8rem}th{background:var(--wash)}
+.stop{border-left:4px solid var(--accent);padding:.1rem 1rem;background:var(--wash);margin:1.5rem 0}
+small{font-size:.86rem;line-height:1.55;color:var(--muted);display:block}footer{border-top:1px solid var(--line);padding:1.2rem 0 2.3rem;color:var(--muted);font-size:.86rem}
+@media(max-width:420px){.wrap{width:calc(100% - 2rem)}header{padding-top:2rem}h1{font-size:2.2rem}figure{padding:.65rem}th,td{padding:.6rem .45rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#guide">Skip to the guide</a>
+<header class="wrap">
+<p class="eyebrow">Tastyplay · Practical notes</p>
+<h1>Print a cabinet handle template at the right scale</h1>
+<nav aria-label="Guide sections"><a href="#measure">What to measure</a><a href="#print">Print settings</a><a href="#check">Check the paper</a><a href="#limits">Before marking</a></nav>
+</header>
+<main id="guide" class="wrap"><article>
+<p><strong>A printable cabinet handle template is a marking aid, not proof that the printed holes are the right distance apart.</strong> Start with your measured hole pitch, then check the paper with a physical ruler before transferring any marks.</p>
+<p>The <a href="https://tastyplay.store/tools/cabinet-handle-print-template/">cabinet handle template generator</a> makes a one-page SVG for one horizontal, two-hole drawer pull. It accepts millimetres or decimal inches and offers A4 or US Letter landscape. The example values are not a recommendation for your hardware or drawer.</p>
+
+<h2 id="measure">Measure hole centres, not the handle's overall length</h2>
+<p>Hole pitch is the distance from the centre of one fixing hole to the centre of the other. Keep that separate from the full length of the grip. The top-edge offset is another measurement: in this tool it starts at the drawn top datum, not at the edge of the paper.</p>
+<figure>
+<svg viewBox="0 0 560 285" role="img" aria-labelledby="diagram-title diagram-desc">
+<title id="diagram-title">Hole pitch, drawer centreline and top datum are separate references</title>
+<desc id="diagram-desc">Two hole centres sit equally either side of a vertical drawer centreline. Their horizontal separation is the pitch. Their vertical distance from the top datum is a separately chosen offset. This illustration is not full size.</desc>
+<rect x="25" y="50" width="510" height="210" rx="2" fill="#faf8f4" stroke="#cbd5cd" stroke-width="2"/>
+<path d="M25 50H535" stroke="#155b44" stroke-width="4"/>
+<text x="30" y="31" fill="#155b44" font-family="system-ui,sans-serif" font-size="26">Top datum</text>
+<path d="M280 63V245" stroke="#52665c" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="132" y="128" width="296" height="39" rx="15" fill="none" stroke="#52665c" stroke-width="2"/>
+<circle cx="170" cy="147" r="7" fill="#155b44"/><circle cx="390" cy="147" r="7" fill="#155b44"/>
+<path d="M170 174V205M390 174V205M170 196H390M178 190L170 196L178 202M382 190L390 196L382 202" fill="none" stroke="#155b44" stroke-width="2"/>
+<text x="280" y="228" text-anchor="middle" fill="#172d26" font-family="system-ui,sans-serif" font-size="26">Pitch: centre to centre</text>
+<path d="M458 50V147M450 58L458 50L466 58M450 139L458 147L466 139" fill="none" stroke="#155b44" stroke-width="2"/>
+<text x="365" y="97" fill="#172d26" font-family="system-ui,sans-serif" font-size="26">Offset</text>
+</svg>
+<figcaption>Illustration only, not a full-size template. The dashed line is the drawer centreline. Position is your decision; the drawing does not prescribe an edge distance.</figcaption>
+</figure>
+
+<h2 id="print">Choose the paper, then check the scaling controls</h2>
+<ol>
+<li>Enter the pitch you measured and the offset you chose. Select the paper actually loaded in your printer.</li>
+<li>Generate and download the SVG. Keep its physical dimensions intact; pasting it into a document or taking a screenshot introduces another sizing step.</li>
+<li>In the application printing the file, look for 100% or an actual-size setting rather than an automatic fit option. Names and options vary by application and printer.</li>
+</ol>
+<p>If you have separately converted the drawing to PDF, <a href="https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/page-size.html">Adobe's PDF printing guide</a> distinguishes Actual size from Fit: Actual size does not scale the page, while Fit can shrink or enlarge it. Cropping is possible at actual size. That documentation is for PDF, not an SVG-opening instruction; conversion can introduce its own scaling.</p>
+
+<h2 id="check">Measure both 50 mm calibration bars</h2>
+<p>The generated sheet includes a horizontal and a vertical 50 mm bar. Measure both on the printed paper, then measure the two marked hole centres and compare them with the actual handle. A screen preview is not a physical ruler.</p>
+<table>
+<caption>Illustrative arithmetic for a 50 mm bar; not a printer test or an acceptable-error tolerance</caption>
+<thead><tr><th scope="col">Applied scale</th><th scope="col">Resulting bar</th></tr></thead>
+<tbody><tr><td>100%</td><td>50 mm</td></tr><tr><td>95%</td><td>47.5 mm</td></tr><tr><td>105%</td><td>52.5 mm</td></tr></tbody>
+</table>
+<p>If either bar is wrong, or the axes disagree, stop and investigate the print settings or print path. Do not assume changing a percentage will fix every cause. Reprint and remeasure after any change.</p>
+
+<h2 id="limits">Before marking the drawer</h2>
+<div class="stop"><p><strong>This is not a drill guide.</strong> After checking the print, align the drawn datum and centreline to your own measured references. Mark the points, remove the paper, recheck, and test on scrap before working on the drawer.</p></div>
+<p>The tool does not choose placement, safe edge distance, bit diameter, screw length, compatibility or load capacity. It does not cover a one-hole knob or a vertical handle. Physical print accuracy has not been verified for your printer.</p>
+
+<h2 id="sources">Sources and privacy</h2>
+<p>The <a href="https://www.w3.org/TR/css-values-3/#absolute-lengths">W3C absolute-length reference</a> defines the fixed relationship between inches and millimetres. Defined document dimensions still need a real print check; this page does not certify hardware or printer accuracy.</p>
+<p>This original guide was prepared with AI assistance. Its examples are illustrative. It has no forms, scripts or analytics. Loading it and following links uses the network; <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages logs visitors' IP addresses for security</a>. The linked template tool generates its SVG in the browser, without uploading the entered measurements.</p>
+</article></main>
+<footer class="wrap">A practical print-check guide for one existing tool. <a href="https://github.com/tatyanazaiceva76/cabinet-handle-print-guide">View the source</a>.</footer>
+</body>
+</html>
